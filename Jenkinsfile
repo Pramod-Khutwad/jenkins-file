@@ -23,9 +23,9 @@ pipeline {
 		}
 		
 		stage ('build-gameoflife'){
-            steps {
-                sh "mvn -f /mnt/projects/game-of-life/pom.xml install"
-            }
+           		 steps {
+                		sh "mvn -f /mnt/projects/game-of-life/pom.xml install"
+           		 }
 		}
 		
 		stage ('copy-gameoflife.war'){
